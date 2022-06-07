@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="472.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ControllerAmbulanceContact">
+   <children>
+      <AnchorPane prefHeight="481.0" prefWidth="699.0">
+         <children>
+            <Pane layoutY="1.0" prefHeight="500.0" prefWidth="190.0" style="-fx-background-color: #45dabc;" styleClass="image">
+               <children>
+                  <ImageView fitHeight="166.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Background.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="125.0" fitWidth="190.0" layoutX="1.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/1st%20page.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutY="206.0" prefHeight="60.0" prefWidth="190.0" style="-fx-background-color: #fffefe;" text=" Emergency E-Health &amp; Medicare" textFill="#45dabc" underline="true" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="207.0" layoutY="78.0" prefHeight="345.0" prefWidth="469.0" style="-fx-background-color: #45dabc;">
+               <children>
+                  <TextField fx:id="queries" layoutX="108.0" layoutY="91.0" prefHeight="202.0" prefWidth="347.0" />
+                  <Label layoutX="14.0" layoutY="91.0" prefHeight="32.0" prefWidth="91.0" text="Queries:" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="button" layoutX="350.0" layoutY="306.0" mnemonicParsing="false" onAction="#send" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #fffefe;" text="Send">
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow height="70.34" radius="34.67" spread="0.23" width="70.34" />
+                     </effect>
+                  </Button>
+                  <TextField fx:id="nameContact" layoutX="108.0" layoutY="14.0" prefHeight="70.0" prefWidth="347.0" />
+                  <Label layoutX="2.0" layoutY="14.0" prefHeight="32.0" prefWidth="116.0" text="Name &amp; Contact No:" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button layoutX="207.0" layoutY="40.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="31.0" text="&lt;-" textFill="#45dabc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

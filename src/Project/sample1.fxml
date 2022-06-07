@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Controller1">
+   <children>
+      <Pane layoutY="5.0" prefHeight="396.0" prefWidth="638.0">
+         <children>
+            <Label layoutX="270.0" layoutY="226.0" prefHeight="25.0" prefWidth="318.0" text="&quot; Having A Personal Bond To Medical Generosity &quot;" textFill="#2582a4">
+               <font>
+                  <Font name="Ink Free" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="166.0" layoutY="-6.0" prefHeight="110.0" prefWidth="473.0" style="-fx-background-color: #45dabc;" text="  Emergency E-Health &amp; Medicare" textAlignment="CENTER" textFill="#fffefe" wrapText="true">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="293.0" fitWidth="479.0" layoutX="166.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="455.0" layoutY="193.0" mnemonicParsing="false" onAction="#customer" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #45dabc;" text="Customer" textFill="#feffff">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Pane layoutY="-12.0" prefHeight="410.0" prefWidth="166.0" style="-fx-background-color: #45dabc;" styleClass="image">
+               <children>
+                  <ImageView fitHeight="110.0" fitWidth="174.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/1st%20page.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutY="350.0" prefHeight="60.0" prefWidth="166.0" style="-fx-background-color: #fffefe;" text="   &quot; Stay Safe &quot;" textFill="#2582a4" wrapText="true">
+                     <font>
+                        <Font name="MV Boli" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button layoutX="455.0" layoutY="138.0" mnemonicParsing="false" onAction="#Provider" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #45dabc;" text="Provider" textFill="#f8f6f6">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button layoutX="502.0" layoutY="251.0" mnemonicParsing="false" onAction="#Aboutus" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #45dabc;" text="About Us" textFill="#fcf7f9" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="471.0" layoutY="276.0" prefHeight="60.0" prefWidth="120.0" text="24/7" textFill="#eb0b0b">
+               <font>
+                  <Font name="Ink Free" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="346.0" text="Emergency Service" textFill="#eb1212" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="261.0" layoutY="72.0" text="&quot;Having A Personal Bond To Medical Generosity&quot;" textFill="#2844e4">
+               <font>
+                  <Font name="Ink Free" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

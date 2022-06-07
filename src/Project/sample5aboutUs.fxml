@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="557.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ControlleraboutUs">
+   <children>
+      <Pane layoutX="196.0" layoutY="90.0" prefHeight="378.0" prefWidth="539.0">
+         <children>
+            <Label layoutX="4.0" layoutY="49.0" prefHeight="86.0" prefWidth="532.0" text="This service is for all and also all over in Bangladesh. You can get emergency services anytime(24 Hours). Our main services are providing medicines, ambulance, doctors details and ICU procurable. We are always determined to our service. If you face any issues with our services then please let us know. Keep in touch with us." textAlignment="JUSTIFY" wrapText="true" />
+            <Label layoutX="204.0" layoutY="14.0" prefHeight="29.0" prefWidth="133.0" style="-fx-background-color: #45dabc;" text="  About Us" textAlignment="CENTER" textFill="#fffdfd" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="221.0" layoutY="162.0" prefHeight="20.0" prefWidth="98.0" text="Contact details:" textFill="#161cd3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="190.0" prefHeight="20.0" prefWidth="49.0" text="Hotline:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="210.0" prefHeight="20.0" prefWidth="98.0" text="E-mail:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="230.0" prefHeight="20.0" prefWidth="98.0" text="Website:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="217.0" layoutY="191.0" prefHeight="17.0" prefWidth="205.0" text="01651577780" />
+            <Label layoutX="217.0" layoutY="211.0" prefHeight="17.0" prefWidth="205.0" text="ehealthandmedicare@gmail.com" />
+            <Label layoutX="217.0" layoutY="231.0" prefHeight="17.0" prefWidth="205.0" text="www.e-health &amp; medicare.com" />
+            <Label layoutX="111.0" layoutY="249.0" prefHeight="20.0" prefWidth="98.0" text="Address:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="217.0" layoutY="250.0" prefHeight="17.0" prefWidth="265.0" text="House#17, Block-D, Mohammadpur, Dhaka" />
+            <Label layoutX="111.0" layoutY="292.0" prefHeight="25.0" prefWidth="318.0" text="&quot; Having A Personal Bond To Medical Generosity &quot;" textFill="#2582a4">
+               <font>
+                  <Font name="Ink Free" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="4.0" layoutY="16.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="35.0" text="&lt;-" textFill="#45dabc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="557.0" prefWidth="189.0" style="-fx-background-color: #45dabc;" styleClass="image">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="188.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="166.0" fitWidth="188.0" layoutX="1.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1st%20page.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutY="249.0" prefHeight="60.0" prefWidth="190.0" style="-fx-background-color: #fffefe;" text="       &quot; Stay Safe &quot;" textFill="#2582a4" wrapText="true">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

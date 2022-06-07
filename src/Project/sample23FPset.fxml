@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="311.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ControllerFPset">
+   <children>
+      <Label prefHeight="118.0" prefWidth="316.0" style="-fx-background-color: #45dabc;" text="        Set Password" textAlignment="CENTER" textFill="#fffefe" wrapText="true">
+         <font>
+            <Font name="Javanese Text" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="266.0" fitWidth="315.0" layoutX="1.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="button" layoutX="219.0" layoutY="239.0" mnemonicParsing="false" onAction="#Set" prefHeight="30.0" prefWidth="61.0" style="-fx-background-color: #45dabc;" text="Set" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="confirmpass" layoutX="36.0" layoutY="196.0" prefHeight="37.0" prefWidth="244.0" promptText="Confirm New Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="newpass" layoutX="37.0" layoutY="139.0" prefHeight="37.0" prefWidth="244.0" promptText="Enter New Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

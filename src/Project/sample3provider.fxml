@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Controller3Provider">
+   <children>
+      <Button layoutX="241.0" layoutY="282.0" mnemonicParsing="false" onAction="#Admin" style="-fx-background-color: #45dabc;" text="Admin" textFill="#f8f5f6">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="241.0" layoutY="363.0" mnemonicParsing="false" onAction="#Ambulance" style="-fx-background-color: #45dabc;" text="Ambulance" textFill="#fcf3f6">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="278.0" fitWidth="235.0" layoutX="485.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Provider.png" />
+         </image>
+         <effect>
+            <DropShadow height="67.41" radius="33.205" spread="0.17" width="67.41">
+               <color>
+                  <Color red="0.2705882489681244" green="0.8549019694328308" blue="0.7372549176216125" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Button layoutX="241.0" layoutY="203.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="35.0" text="&lt;-" textFill="#45dabc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Pane layoutY="-6.0" prefHeight="523.0" prefWidth="190.0" style="-fx-background-color: #45dabc;" styleClass="image">
+         <children>
+            <ImageView fitHeight="166.0" fitWidth="190.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="125.0" fitWidth="190.0" layoutX="1.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1st%20page.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutY="232.0" prefHeight="60.0" prefWidth="190.0" style="-fx-background-color: #fffefe;" text=" Emergency E-Health &amp; Medicare" textFill="#45dabc" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="190.0" prefHeight="118.0" prefWidth="590.0" style="-fx-background-color: #45dabc;" text="          Welcome To Our Community" textAlignment="CENTER" textFill="#fffefe" wrapText="true">
+         <font>
+            <Font name="Javanese Text" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

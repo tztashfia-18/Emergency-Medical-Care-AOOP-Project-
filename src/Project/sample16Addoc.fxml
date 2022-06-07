@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="547.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ControllerAddoc">
+   <children>
+      <TableView fx:id="doc_tab" editable="true" layoutX="189.0" layoutY="114.0" opacity="0.72" prefHeight="433.0" prefWidth="597.0" style="-fx-background-color: #45dabc;">
+         <columns>
+            <TableColumn fx:id="docname" prefWidth="155.0" text="Doctor Name &amp; Details" />
+            <TableColumn fx:id="contact" prefWidth="104.0" text="Contact Detail" />
+            <TableColumn fx:id="time" prefWidth="84.0" text="Time" />
+            <TableColumn fx:id="hospital" prefWidth="88.0" text="Hospital" />
+            <TableColumn fx:id="charges" prefWidth="78.0" text="Charges" />
+            <TableColumn fx:id="catagory" prefWidth="104.0" text="Catagories" />
+         </columns>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Button layoutX="219.0" layoutY="41.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="31.0" text="&lt;-" textFill="#45dabc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="677.0" layoutY="41.0" mnemonicParsing="false" onAction="#sgnout" prefHeight="13.0" prefWidth="83.0" text="Sign Out" textFill="#45dabc" underline="true">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Pane layoutY="-5.0" prefHeight="552.0" prefWidth="190.0" style="-fx-background-color: #45dabc;" styleClass="image">
+         <children>
+            <ImageView fitHeight="166.0" fitWidth="190.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="125.0" fitWidth="190.0" layoutX="1.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1st%20page.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutY="246.0" prefHeight="60.0" prefWidth="190.0" style="-fx-background-color: #fffefe;" text=" Emergency E-Health &amp; Medicare" textFill="#45dabc" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="261.0" layoutY="41.0" mnemonicParsing="false" onAction="#Update" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #45dabc;" text="Update" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

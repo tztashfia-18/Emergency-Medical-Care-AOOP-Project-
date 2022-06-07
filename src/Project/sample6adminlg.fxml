@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="516.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ControllerAdminlg">
+   <children>
+      <Pane layoutX="217.0" layoutY="89.0" prefHeight="370.0" prefWidth="530.0" style="-fx-background-color: #45dabc;">
+         <children>
+            <TextField fx:id="UserID" layoutX="129.0" layoutY="160.0" prefHeight="34.0" prefWidth="313.0" promptText="Enter Your User Id" />
+            <Button layoutX="14.0" layoutY="28.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="35.0" text="&lt;-" textFill="#45dabc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="129.0" layoutY="213.0" prefHeight="23.0" prefWidth="94.0" style="-fx-background-color: #45dabc;" text="Password:" textFill="#fdfffe">
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="21.6025" spread="0.16" width="67.41">
+                     <color>
+                        <Color red="0.9868420958518982" green="0.9731359481811523" blue="0.9731359481811523" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Button fx:id="button" layoutX="336.0" layoutY="286.0" mnemonicParsing="false" onAction="#sgn" prefHeight="13.0" prefWidth="83.0" text="Sign In" textFill="#45dabc" underline="true">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <ImageView fitHeight="106.0" fitWidth="442.0" layoutX="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/adminlogin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="129.0" layoutY="137.0" prefHeight="23.0" prefWidth="94.0" style="-fx-background-color: #45dabc;" text="User ID:" textFill="#fdfffe">
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="21.6025" spread="0.16" width="67.41">
+                     <color>
+                        <Color red="0.9868420958518982" green="0.9731359481811523" blue="0.9731359481811523" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <PasswordField fx:id="AdminPass" layoutX="129.0" layoutY="236.0" prefHeight="34.0" prefWidth="313.0" promptText="Enter Your Password" />
+         </children>
+      </Pane>
+      <Pane layoutY="-6.0" prefHeight="560.0" prefWidth="190.0" style="-fx-background-color: #45dabc;" styleClass="image">
+         <children>
+            <ImageView fitHeight="166.0" fitWidth="190.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="125.0" fitWidth="190.0" layoutX="1.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1st%20page.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutY="250.0" prefHeight="60.0" prefWidth="190.0" style="-fx-background-color: #fffefe;" text=" Emergency E-Health &amp; Medicare" textFill="#45dabc" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

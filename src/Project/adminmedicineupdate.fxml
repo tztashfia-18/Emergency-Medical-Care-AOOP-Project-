@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="557.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ControllerMedicineUpdate">
+   <children>
+      <Pane prefHeight="557.0" prefWidth="190.0" style="-fx-background-color: #45dabc;" styleClass="image">
+         <children>
+            <ImageView fitHeight="166.0" fitWidth="190.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="125.0" fitWidth="190.0" layoutX="1.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1st page.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutY="249.0" prefHeight="60.0" prefWidth="190.0" style="-fx-background-color: #fffefe;" text=" Emergency E-Health &amp; Medicare" textFill="#45dabc" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="209.0" layoutY="52.0" prefHeight="477.0" prefWidth="542.0" style="-fx-background-color: #45dabc;">
+         <children>
+            <Button fx:id="button1" layoutX="352.0" layoutY="436.0" mnemonicParsing="false" onAction="#remove" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #fffefe;" text="Remove">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="70.34" radius="34.67" spread="0.23" width="70.34" />
+               </effect>
+            </Button>
+            <TextField fx:id="med_name" layoutX="108.0" layoutY="14.0" prefHeight="44.0" prefWidth="347.0" />
+            <Label layoutX="2.0" layoutY="14.0" prefHeight="32.0" prefWidth="116.0" text="Medicine Name:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mg" layoutX="108.0" layoutY="146.0" prefHeight="44.0" prefWidth="347.0" />
+            <TextField fx:id="amount" layoutX="108.0" layoutY="221.0" prefHeight="44.0" prefWidth="347.0" />
+            <TextField fx:id="company" layoutX="108.0" layoutY="297.0" prefHeight="44.0" prefWidth="347.0" />
+            <TextField fx:id="phone" layoutX="108.0" layoutY="370.0" prefHeight="44.0" prefWidth="347.0" />
+            <TextField fx:id="gen_name" layoutX="108.0" layoutY="81.0" prefHeight="44.0" prefWidth="347.0" />
+            <Label layoutX="2.0" layoutY="370.0" prefHeight="32.0" prefWidth="116.0" text="Price:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="2.0" layoutY="297.0" prefHeight="32.0" prefWidth="116.0" text="Company:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="2.0" layoutY="146.0" prefHeight="32.0" prefWidth="116.0" text="Mg:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="2.0" layoutY="221.0" prefHeight="32.0" prefWidth="116.0" text="Amount:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="2.0" layoutY="81.0" prefHeight="32.0" prefWidth="116.0" text="Generic Name:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="button" layoutX="108.0" layoutY="436.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #fffefe;" text="ADD">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="70.34" radius="34.67" spread="0.23" width="70.34" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutX="209.0" layoutY="21.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="31.0" text="&lt;-" textFill="#45dabc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

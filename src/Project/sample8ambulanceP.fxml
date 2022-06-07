@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ControllerAmbulanceP">
+   <children>
+      <Pane layoutX="213.0" layoutY="166.0" prefHeight="360.0" prefWidth="235.0" style="-fx-background-color: #45dabc;">
+         <children>
+            <Button fx:id="button" layoutX="141.0" layoutY="325.0" mnemonicParsing="false" onAction="#signup" prefHeight="13.0" prefWidth="83.0" text="Sign Up" textFill="#45dabc" underline="true">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="6.0" layoutY="23.0" prefHeight="17.0" prefWidth="63.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="65.0" prefHeight="17.0" prefWidth="90.0" text="Phone Number:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="107.0" prefHeight="17.0" prefWidth="63.0" text=" Location:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="230.0" prefHeight="17.0" prefWidth="63.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="6.0" layoutY="40.0" prefHeight="25.0" prefWidth="218.0" />
+            <TextField fx:id="address" layoutX="6.0" layoutY="124.0" prefHeight="25.0" prefWidth="218.0" />
+            <TextField fx:id="phone" layoutX="4.0" layoutY="82.0" prefHeight="25.0" prefWidth="218.0" />
+            <TextField fx:id="ambulance_no" layoutX="4.0" layoutY="205.0" prefHeight="25.0" prefWidth="218.0" />
+            <Label layoutX="6.0" layoutY="188.0" prefHeight="17.0" prefWidth="100.0" text="Ambulance No:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" prefHeight="21.0" prefWidth="200.0" text="Create an account" textFill="#eb0909" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="149.0" prefHeight="17.0" prefWidth="100.0" text="Available Time:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="time" layoutX="4.0" layoutY="163.0" prefHeight="25.0" prefWidth="218.0" />
+            <Label layoutX="6.0" layoutY="272.0" prefHeight="17.0" prefWidth="122.0" text="Confirm Password:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="6.0" layoutY="247.0" prefHeight="25.0" prefWidth="218.0" />
+            <PasswordField fx:id="password1" layoutX="6.0" layoutY="289.0" prefHeight="25.0" prefWidth="218.0" />
+         </children>
+      </Pane>
+      <Button layoutX="213.0" layoutY="132.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="32.0" text="&lt;-" textFill="#45dabc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="625.0" layoutY="478.0" mnemonicParsing="false" onAction="#AcontactUs" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #45dabc;" text="Contact Us" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Pane layoutX="490.0" layoutY="233.0" prefHeight="226.0" prefWidth="235.0" style="-fx-background-color: #45dabc;">
+         <children>
+            <Button fx:id="button1" layoutX="138.0" layoutY="178.0" mnemonicParsing="false" onAction="#signIn" prefHeight="13.0" prefWidth="83.0" text="Sign In" textFill="#45dabc" underline="true">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="6.0" layoutY="53.0" prefHeight="17.0" prefWidth="90.0" text="Phone Number:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="113.0" prefHeight="17.0" prefWidth="63.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="logphone" layoutX="6.0" layoutY="70.0" prefHeight="25.0" prefWidth="218.0" />
+            <Label layoutX="1.0" layoutY="20.0" prefHeight="21.0" prefWidth="191.0" text="Already have an account" textFill="#eb0909" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="logpass" layoutX="6.0" layoutY="130.0" prefHeight="25.0" prefWidth="218.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="3.0" prefHeight="585.0" prefWidth="190.0" style="-fx-background-color: #45dabc;" styleClass="image">
+         <children>
+            <ImageView fitHeight="125.0" fitWidth="190.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="125.0" fitWidth="190.0" layoutX="1.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1st%20page.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="6.0" layoutY="134.0" prefHeight="305.0" prefWidth="178.0" style="-fx-background-color: #fffefe;" textFill="#45dabc" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="150.0" prefHeight="17.0" prefWidth="129.0" text="Terms &amp; Conditions" underline="true">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="Terms" layoutX="16.0" layoutY="178.0" prefHeight="239.0" prefWidth="157.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="190.0" prefHeight="118.0" prefWidth="555.0" style="-fx-background-color: #45dabc;" text="            Ambulance Provider" textAlignment="CENTER" textFill="#fffefe" wrapText="true">
+         <font>
+            <Font name="Javanese Text" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

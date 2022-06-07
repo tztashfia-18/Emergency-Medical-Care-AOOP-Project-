@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="506.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Controlleradminfilelist">
+   <children>
+      <Button layoutX="205.0" layoutY="175.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="35.0" text="&lt;-" textFill="#45dabc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="205.0" layoutY="240.0" mnemonicParsing="false" onAction="#Medicine" style="-fx-background-color: #45dabc;" text="Medicines" textFill="#fcfafb">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="205.0" layoutY="299.0" mnemonicParsing="false" onAction="#Doctor" style="-fx-background-color: #45dabc;" text="Doctors" textFill="#fcfafb">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="205.0" layoutY="365.0" mnemonicParsing="false" onAction="#ICU" prefHeight="51.0" prefWidth="145.0" style="-fx-background-color: #45dabc;" text="Find ICU" textFill="#fcfcfc">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutY="1.0" prefHeight="505.0" prefWidth="190.0" style="-fx-background-color: #45dabc;" styleClass="image">
+         <children>
+            <ImageView fitHeight="166.0" fitWidth="190.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutY="268.0" prefHeight="60.0" prefWidth="190.0" style="-fx-background-color: #fffefe;" text=" Emergency E-Health &amp; Medicare" textFill="#45dabc" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="133.0" fitWidth="196.0" layoutX="-3.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1st page.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="190.0" layoutY="1.0" prefHeight="118.0" prefWidth="552.0" style="-fx-background-color: #45dabc;" text="                 Admin View" textAlignment="CENTER" textFill="#fffefe" wrapText="true">
+         <font>
+            <Font name="Javanese Text" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="526.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Provider.png" />
+         </image>
+         <effect>
+            <DropShadow height="73.28" radius="38.3375" spread="0.15" width="82.07">
+               <color>
+                  <Color red="0.2705882489681244" green="0.8549019694328308" blue="0.7372549176216125" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
